@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Program</title>
+  </head>
+  <body>
+    <script>
+      let spacebarPresses = 0;
+      
+      document.addEventListener("keypress", function(event) {
+        if (event.code === "Space") {
+          spacebarPresses++;
+    
+          if (spacebarPresses === 3) {
+            let audio = new Audio("/sounds/Scannin_Please_Wait.mp3");
+            audio.play();
+          }
+        }
+      });
+
+      document.addEventListener("keypress", function(event) {
+        if (event.code === "Space") {
+          spacebarPresses++;
+    
+          if (spacebarPresses === 3) {
+            let audio = new Audio("/sounds/warning.mp3");
+            audio.play();
+          }
+        }
+      });
+
+      let numberPad1Presses = 0;
+
+document.addEventListener("keypress", function(event) {
+  if (event.code === "Numpad1") {
+    numberPad1Presses++;
+
+    if (numberPad1Presses === 3) {
+      let audio = new Audio("sounds/Medical_scanner_online.mp3");
+      audio.play();
+    }
+  }
+});
+
+let numberPad2Presses = 0;
+
+document.addEventListener("keypress", function(event) {
+  if (event.code === "Numpad2") {
+    numberPad2Presses++;
+
+    if (numberPad2Presses === 3) {
+      let audio = new Audio("sounds/Medical_scanner_offline.mp3");
+      audio.play();
+    }
+  }
+});
+
+let numberPad3Presses = 0;
+
+document.addEventListener("keypress", function(event) {
+  if (event.code === "Numpad3") {
+    numberPad3Presses++;
+
+    if (numberPad3Presses === 3) {
+      let audio = new Audio("sounds/initiated.mp3");
+      audio.play();
+    }
+  }
+});
+
+let numberPad4Presses = 0;
+
+document.addEventListener("keypress", function(event) {
+  if (event.code === "Numpad4") {
+    numberPad4Presses++;
+
+    if (numberPad4Presses === 3) {
+      let audio = new Audio("sounds/complete.mp3");
+      audio.play();
+    }
+  }
+});
+
+let numberPad5Presses = 0;
+
+document.addEventListener("keypress", function(event) {
+  if (event.code === "Numpad5") {
+    numberPad5Presses++;
+
+    if (numberPad5Presses === 3) {
+      let audio = new Audio("sounds/scanning.mp3");
+      audio.play();
+    }
+  }
+});
+
+let numberPad6Presses = 0;
+
+document.addEventListener("keypress", function(event) {
+  if (event.code === "Numpad6") {
+    numberPad6Presses++;
+
+    if (numberPad6Presses === 3) {
+      let audio = new Audio("sounds/infection.mp3");
+      audio.play();
+    }
+  }
+});
+
+let numberPad7Presses = 0;
+
+document.addEventListener("keypress", function(event) {
+  if (event.code === "Numpad7") {
+    numberPad7Presses++;
+
+    if (numberPad7Presses === 3) {
+      let audio = new Audio("sounds/unknown_infection.mp3");
+      audio.play();
+    }
+  }
+});
+
+let numberPad8Presses = 0;
+
+document.addEventListener("keypress", function(event) {
+  if (event.code === "Numpad8") {
+    numberPad8Presses++;
+
+    if (numberPad8Presses === 3) {
+      let audio = new Audio("sounds/disease_detected.mp3");
+      audio.play();
+    }
+  }
+});
+
+let numberPad9Presses = 0;
+
+document.addEventListener("keypress", function(event) {
+  if (event.code === "Numpad9") {
+    numberPad9Presses++;
+
+    if (numberPad9Presses === 3) {
+      let audio = new Audio("sounds/unknown_disease.mp3");
+      audio.play();
+    }
+  }
+});
+
+let numberPad0Presses = 0;
+
+document.addEventListener("keypress", function(event) {
+  if (event.code === "Numpad0") {
+    numberPad0Presses++;
+
+    if (numberPad0Presses === 3) {
+      let audio = new Audio("sounds/error.mp3");
+      audio.play();
+    }
+  }
+});
+
+
+
+
+
+    </script>
+  </body>
+</html>
